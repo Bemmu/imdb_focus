@@ -1,0 +1,13 @@
+{
+  "name": "IMDB focuser",
+  "icons" : {
+  	"48" : "icon.png"
+  },
+  "version": "1.0",
+  "description": "Fixes a minor annoyance with the IMDB main page: puts focus on the search box by default.",
+   "content_scripts": [ {
+      "js": [ "doc_end.js" ],
+      "matches": [ "http://www.imdb.com/" ],
+      "run_at": "document_end" }
+  ]
+}
